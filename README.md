@@ -1,5 +1,6 @@
 # Video-transfer-based-on-CCPL
 This is a project that will help you convert a video or image into a variety of styles
+
 我们的模型并非完全原创，而是根据GitHub优秀的开源作者提供的模型做出改良而成的，原作者的GitHub网址[CCPL+SCTNet模型源地址](https://github.com/JarrentWu1031/CCPL)
 # 一、模型风格迁移效果展示
 ## 1.1 人物图（多色彩方面迁移）
@@ -23,7 +24,9 @@ This is a project that will help you convert a video or image into a variety of 
 我们的图片色彩相比原作者更加柔和，同时清晰度更高，有些狗尾草的局部细节也能体现出来。
 
 ##1.5 视频风格迁移差异
+
 以下会展示我们模型所有的视频风格迁移模式。
+
 ### 1.5.1 原作者的艺术级风格迁移模式
 ![对比图片](CCPL-main/markdownPic/author_grass_art_.gif)
 
@@ -41,6 +44,7 @@ This is a project that will help you convert a video or image into a variety of 
 ## 2.2 创新的方式
 通过阅读相关的论文，我们在训练模型中加入感知损失模块。我们将VGG19模型的某些层作为该感知损失模块的图片特征提取器，用提取到的特征计算相应的损失，并将这些损失加入到总的损失函数中，通过该损失函数调节融合网络SCTNet中的参数，从而改变不同风格特征和内容特征的融合结果，最终实现不一样风格迁移的效果。
 ## 2.3 创新模式的架构图
+
 第一个部分介绍的是在总的模型中加入了感知损失函数，第二个部分介绍了这个感知损失函数是怎么构成的。
 ![对比图片](CCPL-main/markdownPic/structure1.png)
 ![对比图片](CCPL-main/markdownPic/structure2.png)
