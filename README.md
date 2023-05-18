@@ -23,7 +23,7 @@ This is a project that will help you convert a video or image into a variety of 
 
 我们的图片色彩相比原作者更加柔和，同时清晰度更高，有些狗尾草的局部细节也能体现出来。
 
-##1.5 视频风格迁移差异
+## 1.5 视频风格迁移差异
 
 以下会展示我们模型所有的视频风格迁移模式。
 
